@@ -23,7 +23,8 @@ img {
   height: auto;
   vertical-align: bottom;
   border-style: none;
-  padding: 20px 0;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -182,7 +183,7 @@ img {
 }
 
 .works-item:hover {
-  opacity: .9;
+  opacity: 0.5;
 }
 
 .works-item:nth-of-type(3n) {
@@ -258,6 +259,7 @@ img {
 .profile-img img {
   width: 110px;
   height: 190px;
+  border-radius: 35px;
 }
 .profile-body {
   flex: 1;
@@ -288,7 +290,7 @@ img {
 }
 
 #mail {
-  height: 100px;
+  height: 80px;
   width: 60px;
   margin: 5px;
 }
