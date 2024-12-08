@@ -537,7 +537,8 @@ img {
     display: block;
   }
   .profile-img {
-    
+    width: 110px;
+    height: 190px;
     margin: 0 auto 25px auto;
   }
 
