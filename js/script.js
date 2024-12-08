@@ -18,3 +18,14 @@ $(function () {
   });
 
 });
+
+$(window).on('load scroll',function(){
+  $('.works-img').each(function(){
+    let viewPos = $(this).offset().top;
+    let scrollPos = $(window).scrollTop();
+    let winHeight = $(window).height();
+    if( scrollPos > viewPos - winHeight){
+      $(this).addClass('js-on');
+    }
+  });
+});
