@@ -48,8 +48,8 @@ img {
   padding: 90px 0;
 }
 
-.section:nth-of-type(odd) {
-  background-color: #f7f7f7;
+.section:nth-of-type(2n) {
+  background-color: #e0dfdf;
 }
 
 .container {
@@ -148,24 +148,63 @@ img {
 /*--------------------------------
  メインビジュアル
 ---------------------------------*/
-.mv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  text-align: center;
+.photo section {
+ padding: 0;
+ margin: 0;
 }
 
 .mv-container {
-  position: relative;
-  padding: 0 20px;
+  padding: 0;
 }
 
-.mv-container img {
+
+
+/* ローディング */
+.loader {
+  position: fixed;
   width: 100%;
-  height: auto;
+  height: 100%;
+  background-color: #fff;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 1.5s 2.5s forwards;
 }
 
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.txt {
+  opacity: 0;
+  animation: txt_fade 2s 0.5s forwards;
+  font-size: 50px;
+}
+
+@keyframes txt_fade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /*--------------------------------
  Works
 ---------------------------------*/
@@ -261,6 +300,23 @@ img {
   line-height: 1.8;
 }
 
+.skill-body {
+  vertical-align: middle;
+  filter: blur(10px);
+  transform: translateX(30px);
+  opacity: 0;
+  transition: all .3s ease-in-out .3s;
+}
+
+.skill-body.js-on {
+  filter: blur(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+
+
+
 /*--------------------------------
  About
 ---------------------------------*/
@@ -291,6 +347,48 @@ img {
 
 .profile-body p:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.profile {
+  vertical-align: middle;
+  filter: blur(10px);
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all .3s ease-in-out .3s;
+}
+
+.profile.js-on {
+  filter: blur(0px);
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.profile-img {
+  vertical-align: middle;
+  filter: blur(10px);
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all .3s ease-in-out .3s;
+}
+
+.profile-img.js-on {
+  filter: blur(0px);
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.profile-body {
+  vertical-align: middle;
+  filter: blur(10px);
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all .3s ease-in-out .3s;
+}
+
+.profile-body.js-on {
+  filter: blur(0px);
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 /*--------------------------------
@@ -334,7 +432,7 @@ img {
 ---------------------------------*/
 .footer {
   padding: 30px;
-  background-color: #333;
+  background-color: #424242;
 }
 
 .copyright {

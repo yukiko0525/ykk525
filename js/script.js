@@ -29,3 +29,47 @@ $(window).on('load scroll',function(){
     }
   });
 });
+
+$(window).on('load scroll',function(){
+  $('.skill-body').each(function(){
+    let viewPos = $(this).offset().top;
+    let scrollPos = $(window).scrollTop();
+    let winHeight = $(window).height();
+    if( scrollPos > viewPos - winHeight){
+      $(this).addClass('js-on');
+    }
+  });
+});
+
+$(window).on('load scroll',function(){
+  $('.profile').each(function(){
+    let viewPos = $(this).offset().top;
+    let scrollPos = $(window).scrollTop();
+    let winHeight = $(window).height();
+    if( scrollPos > viewPos - winHeight){
+      $(this).addClass('js-on');
+    }
+  });
+});
+
+$(window).on('load scroll',function(){
+  $('.profile-img').each(function(){
+    let viewPos = $(this).offset().top;
+    let scrollPos = $(window).scrollTop();
+    let winHeight = $(window).height();
+    if( scrollPos > viewPos - winHeight){
+      $(this).addClass('js-on');
+    }
+  });
+});
+
+$(window).on('load scroll',function(){
+  $('.profile-body').each(function(){
+    let viewPos = $(this).offset().top;
+    let scrollPos = $(window).scrollTop();
+    let winHeight = $(window).height();
+    if( scrollPos > viewPos - winHeight){
+      $(this).addClass('js-on');
+    }
+  });
+});
