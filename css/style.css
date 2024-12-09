@@ -243,6 +243,7 @@ img {
   transform: translateY(30px);
   opacity: 0;
   transition: all .3s ease-in-out .3s;
+  transition-duration: 0.7s;
 }
 
 .works-img.js-on img {
@@ -306,6 +307,7 @@ img {
   transform: translateX(30px);
   opacity: 0;
   transition: all .3s ease-in-out .3s;
+  transition-duration: 0.7s;
 }
 
 .skill-body.js-on {
@@ -355,6 +357,7 @@ img {
   transform: translateY(30px);
   opacity: 0;
   transition: all .3s ease-in-out .3s;
+  transition-duration: 0.7s;
 }
 
 .profile.js-on {
@@ -369,6 +372,7 @@ img {
   transform: translateY(30px);
   opacity: 0;
   transition: all .3s ease-in-out .3s;
+  transition-duration: 0.7s;
 }
 
 .profile-img.js-on {
@@ -383,6 +387,7 @@ img {
   transform: translateY(30px);
   opacity: 0;
   transition: all .3s ease-in-out .3s;
+  transition-duration: 0.7s;
 }
 
 .profile-body.js-on {
@@ -570,7 +575,7 @@ img {
   }
 
   .mv-container {
-    padding: 0 20px;
+    padding: 0;
   }
 
   .mv-title {
